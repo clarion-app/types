@@ -26,6 +26,14 @@ export interface PackageDataType {
   routes?: RouteType[]
 }
 
+export interface UserType extends LaravelModelType{
+  name: string;
+  email: string;
+  password?: string;
+  c_password?: string;
+  email_verified_at?: string;
+}
+
 export interface WindowWS extends Window {
     Pusher: typeof Pusher;
     Echo: Echo;
