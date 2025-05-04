@@ -1,6 +1,12 @@
 import Echo from 'laravel-echo';
 import Pusher from 'pusher-js';
 
+export interface LoggedInUserType {
+  id: string;
+  name: string;
+  email: string;
+}
+
 export interface LaravelModelType {
     id: string;
     created_at: string;
@@ -11,6 +17,7 @@ export interface LaravelModelType {
 export interface BackendType {
     url: string;
     token: string;
+    user: LoggedInUserType;
 }
 
 export interface RouteType {
