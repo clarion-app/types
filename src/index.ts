@@ -8,10 +8,10 @@ export interface LoggedInUserType {
 }
 
 export interface LaravelModelType {
-    id: string;
-    created_at: string;
-    updated_at: string;
-    deleted_at: string;
+    id?: string;
+    created_at?: string;
+    updated_at?: string;
+    deleted_at?: string;
 }
 
 export interface BackendType {
@@ -43,5 +43,5 @@ export interface UserType extends LaravelModelType{
 
 export interface WindowWS extends Window {
     Pusher: typeof Pusher;
-    Echo: Echo;
+    Echo: Echo<any>;
 }
