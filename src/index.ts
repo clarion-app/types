@@ -16,7 +16,6 @@ export interface LaravelModelType {
 
 export interface BackendType {
     url: string;
-    token: string;
     user: LoggedInUserType;
 }
 
